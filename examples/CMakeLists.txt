@@ -23,3 +23,7 @@ target_link_libraries(example_keyboard_listeners
   ${LIB_NAME}
   ${PCL_LIBRARIES}
 )
+
+if (WITH_QT)
+  add_subdirectory(qt)
+endif ()
